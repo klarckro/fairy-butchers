@@ -6,6 +6,13 @@ export default defineNuxtConfig({
     '@nuxt/content'
   ],
   css: ['~/assets/css/main.css'],
+  nitro: {
+    preset: 'vercel',
+    prerender: {
+      routes: ['/'],
+      crawlLinks: true
+    }
+  },
   app: {
     head: {
       htmlAttrs: { lang: 'en' },
