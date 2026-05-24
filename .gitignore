@@ -9,6 +9,10 @@ dist
 # Vercel build output (generated; never commit)
 .vercel
 
+# Tina generated artifacts + built admin UI
+tina/__generated__
+public/admin
+
 # Node dependencies
 node_modules
 
