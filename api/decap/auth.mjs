@@ -1,5 +1,7 @@
 // Decap CMS OAuth — step 1: redirect user to GitHub.
-// Web Fetch API style (compatible with Vercel Fluid + Edge + classic Node).
+// Runs on Vercel Edge runtime — uses Web Fetch API natively.
+
+export const config = { runtime: 'edge' }
 
 export default async function handler(request) {
   const clientId = process.env.NUXT_DECAP_GITHUB_CLIENT_ID
