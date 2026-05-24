@@ -57,6 +57,14 @@
       "dest": "/__fallback"
     },
     {
+      "src": "/api/decap/callback",
+      "dest": "/api/decap/callback"
+    },
+    {
+      "src": "/api/decap/auth",
+      "dest": "/api/decap/auth"
+    },
+    {
       "src": "/__nuxt_error",
       "dest": "/__nuxt_error"
     },

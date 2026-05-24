@@ -4084,7 +4084,7 @@ function _expandFromEnv(value) {
 const _inlineRuntimeConfig = {
   "app": {
     "baseURL": "/",
-    "buildId": "2ff6d070-1a97-43fc-b058-d678910e18d6",
+    "buildId": "dc79f35b-686d-44c2-a213-ba6f212ed6f3",
     "buildAssetsDir": "/_nuxt/",
     "cdnURL": ""
   },
@@ -4177,6 +4177,8 @@ const _inlineRuntimeConfig = {
       "wsUrl": ""
     }
   },
+  "decapGithubClientId": "",
+  "decapGithubClientSecret": "",
   "content": {
     "databaseVersion": "v3.5.0",
     "version": "3.14.0",
@@ -5196,9 +5198,13 @@ const _ZjbSAM = eventHandler(async (event) => {
   return loadDatabaseAdapter(conf).all(sql);
 });
 
+const _lazy_YJm7r_ = () => import('../routes/api/decap/auth.get.mjs');
+const _lazy_YzURYR = () => import('../routes/api/decap/callback.get.mjs');
 const _lazy_O_EGrm = () => import('../routes/renderer.mjs').then(function (n) { return n.r; });
 
 const handlers = [
+  { route: '/api/decap/auth', handler: _lazy_YJm7r_, lazy: true, middleware: false, method: "get" },
+  { route: '/api/decap/callback', handler: _lazy_YzURYR, lazy: true, middleware: false, method: "get" },
   { route: '/__nuxt_error', handler: _lazy_O_EGrm, lazy: true, middleware: false, method: undefined },
   { route: '/__nuxt_content/site/sql_dump.txt', handler: _hwTUkP, lazy: false, middleware: false, method: undefined },
   { route: '/__nuxt_content/events/sql_dump.txt', handler: _hwTUkP, lazy: false, middleware: false, method: undefined },
@@ -5389,5 +5395,5 @@ const listener = function(req, res) {
   return handler(req, res);
 };
 
-export { $fetch$1 as $, withQuery as A, withTrailingSlash as B, withoutTrailingSlash as C, buildAssetsURL as a, baseURL as b, createError$1 as c, decodePath as d, defineRenderHandler as e, defu as f, destr as g, encodePath as h, executeAsync as i, getContext as j, getQuery as k, getRequestHeaders as l, getResponseStatus as m, getResponseStatusText as n, getRouteRules as o, hasProtocol as p, isScriptProtocol as q, joinURL as r, listener as s, parseQuery as t, parseURL as u, publicAssetsURL as v, sanitizeStatusCode as w, useNitroApp as x, useRuntimeConfig as y, withLeadingSlash as z };
+export { $fetch$1 as $, setHeader as A, useNitroApp as B, useRuntimeConfig as C, withLeadingSlash as D, withQuery as E, withTrailingSlash as F, withoutTrailingSlash as G, buildAssetsURL as a, baseURL as b, createError$1 as c, decodePath as d, defineEventHandler as e, defineRenderHandler as f, defu as g, destr as h, encodePath as i, executeAsync as j, getContext as k, getQuery as l, getRequestHeaders as m, getRequestURL as n, getResponseStatus as o, getResponseStatusText as p, getRouteRules as q, hasProtocol as r, isScriptProtocol as s, joinURL as t, listener as u, parseQuery as v, parseURL as w, publicAssetsURL as x, sanitizeStatusCode as y, sendRedirect as z };
 //# sourceMappingURL=nitro.mjs.map

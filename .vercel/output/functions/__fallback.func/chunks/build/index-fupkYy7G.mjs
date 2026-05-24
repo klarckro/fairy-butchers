@@ -1,6 +1,6 @@
 import { defineComponent, withAsyncContext, unref, ref, mergeProps, reactive, useSSRContext, shallowRef, getCurrentInstance, provide, cloneVNode, h, createElementBlock, isRef, computed, toValue, onServerPrefetch, nextTick, toRef } from 'vue';
 import { ssrRenderAttrs, ssrInterpolate, ssrRenderComponent, ssrRenderList, ssrRenderAttr, ssrRenderClass, ssrRenderStyle, ssrIncludeBooleanAttr, ssrLooseContain, ssrLooseEqual } from 'vue/server-renderer';
-import { C as withoutTrailingSlash, v as publicAssetsURL, l as getRequestHeaders } from '../nitro/nitro.mjs';
+import { G as withoutTrailingSlash, x as publicAssetsURL, m as getRequestHeaders } from '../nitro/nitro.mjs';
 import { debounce } from 'perfect-debounce';
 import { t as tryUseNuxtApp, u as useNuxtApp, a as asyncDataDefaults, c as createError } from './server.mjs';
 import { u as useHead } from './composables-Ci6CEbR2.mjs';
