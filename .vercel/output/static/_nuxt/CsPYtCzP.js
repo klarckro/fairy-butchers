@@ -1,1 +1,0 @@
-import{a as r,i as n,Q as o,I as s}from"./BadalHlB.js";const t={};function a(e,c){return s(),n("strong",null,[o(e.$slots,"default")])}const _=Object.assign(r(t,[["render",a]]),{__name:"ProseStrong"});export{_ as default};

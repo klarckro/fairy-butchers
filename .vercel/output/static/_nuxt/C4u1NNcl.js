@@ -1,1 +1,0 @@
-import{a,i as s,Q as r,I as t}from"./BadalHlB.js";const n={};function o(e,c){return t(),s("table",null,[r(e.$slots,"default")])}const _=Object.assign(a(n,[["render",o]]),{__name:"ProseTable"});export{_ as default};
