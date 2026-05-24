@@ -2,15 +2,15 @@ backend:
   name: github
   repo: klarckro/fairy-butchers
   branch: main
-  base_url: https://fairybutchers.vercel.app
+  base_url: https://fairy-butchers.vercel.app
   auth_endpoint: api/decap/auth
 
 publish_mode: simple
 media_folder: public/uploads
 public_folder: /uploads
 
-site_url: https://fairybutchers.vercel.app
-display_url: https://fairybutchers.vercel.app
+site_url: https://fairy-butchers.vercel.app
+display_url: https://fairy-butchers.vercel.app
 logo_url: /assets/logo-circle.jpeg
 
 collections:

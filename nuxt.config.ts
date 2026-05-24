@@ -16,6 +16,9 @@ export default defineNuxtConfig({
     prerender: {
       routes: ['/'],
       crawlLinks: true
+    },
+    routeRules: {
+      '/admin/**': { static: true }
     }
   },
   app: {
