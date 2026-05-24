@@ -16,7 +16,7 @@
     ]
   },
   "marquee": [
-    "RAW · LOUD · BLOODY GOOD"
+    "RAW · LOUD · BLOODY GOOD!"
   ],
   "about": {
     "eyebrow": "/ 04 — ABOUT",
@@ -28,10 +28,22 @@
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam."
     ],
     "stats": [
-      { "num": "142", "label": "Shows Played" },
-      { "num": "3", "label": "EPs Released" },
-      { "num": "12", "label": "Cleavers Owned" },
-      { "num": "∞", "label": "Hours Awake" }
+      {
+        "num": "142",
+        "label": "Shows Played"
+      },
+      {
+        "num": "3",
+        "label": "EPs Released"
+      },
+      {
+        "num": "12",
+        "label": "Cleavers Owned"
+      },
+      {
+        "num": "∞",
+        "label": "Hours Awake"
+      }
     ]
   },
   "contact": {
@@ -41,9 +53,18 @@
     "infoTitle": "Direct line",
     "infoBlurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
     "channels": [
-      { "label": "/ BOOKING", "value": "booking@fairybutchers.ch" },
-      { "label": "/ PRESS", "value": "press@fairybutchers.ch" },
-      { "label": "/ EVERYTHING ELSE", "value": "hello@fairybutchers.ch" }
+      {
+        "label": "/ BOOKING",
+        "value": "booking@fairybutchers.ch"
+      },
+      {
+        "label": "/ PRESS",
+        "value": "press@fairybutchers.ch"
+      },
+      {
+        "label": "/ EVERYTHING ELSE",
+        "value": "hello@fairybutchers.ch"
+      }
     ],
     "subjects": [
       "Booking inquiry",
@@ -53,12 +74,36 @@
       "Other"
     ],
     "socials": [
-      { "label": "IG", "href": "#", "title": "Instagram" },
-      { "label": "FB", "href": "#", "title": "Facebook" },
-      { "label": "YT", "href": "#", "title": "YouTube" },
-      { "label": "SP", "href": "#", "title": "Spotify" },
-      { "label": "TT", "href": "#", "title": "TikTok" },
-      { "label": "BC", "href": "#", "title": "Bandcamp" }
+      {
+        "label": "IG",
+        "href": "#",
+        "title": "Instagram"
+      },
+      {
+        "label": "FB",
+        "href": "#",
+        "title": "Facebook"
+      },
+      {
+        "label": "YT",
+        "href": "#",
+        "title": "YouTube"
+      },
+      {
+        "label": "SP",
+        "href": "#",
+        "title": "Spotify"
+      },
+      {
+        "label": "TT",
+        "href": "#",
+        "title": "TikTok"
+      },
+      {
+        "label": "BC",
+        "href": "#",
+        "title": "Bandcamp"
+      }
     ],
     "footerNote": "© 2026 FAIRY BUTCHERS · ALL RIGHTS RESERVED · MADE WITH ✚ IN SWITZERLAND"
   }
