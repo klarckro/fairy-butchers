@@ -1,0 +1,223 @@
+backend:
+  name: github
+  repo: klarckro/fairy-butchers
+  branch: main
+  base_url: https://fairybutchers.vercel.app
+  auth_endpoint: api/decap/auth
+
+publish_mode: simple
+media_folder: public/uploads
+public_folder: /uploads
+
+site_url: https://fairybutchers.vercel.app
+display_url: https://fairybutchers.vercel.app
+logo_url: /assets/logo-circle.jpeg
+
+collections:
+  # ──────────────────────────────────────────────
+  # SITE-WIDE (hero, marquee, about, contact)
+  # ──────────────────────────────────────────────
+  - name: site
+    label: Site
+    description: Site-wide content — hero, marquee, about, contact info.
+    files:
+      - file: content/site.json
+        name: site
+        label: Site content
+        format: json
+        fields:
+          - { label: Side label, name: sideLabel, widget: string }
+
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Title line 1, name: titleLine1, widget: string }
+              - { label: Title line 2 (pink), name: titleLine2, widget: string }
+              - { label: Tagline (HTML allowed), name: tagHtml, widget: text }
+              - { label: Primary CTA label, name: primaryCta, widget: string }
+              - { label: Ghost CTA label, name: ghostCta, widget: string }
+              - { label: Ribbon tag, name: ribbonTag, widget: string }
+              - label: Ribbon items
+                name: ribbonItems
+                widget: list
+                field: { label: Item, name: item, widget: string }
+
+          - label: Marquee strip lines
+            name: marquee
+            widget: list
+            field: { label: Line, name: line, widget: string }
+
+          - label: About
+            name: about
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Title (use \n for line break), name: title, widget: string }
+              - { label: Subtitle, name: sub, widget: text }
+              - label: Paragraphs
+                name: paragraphs
+                widget: list
+                field: { label: Paragraph, name: paragraph, widget: text }
+              - label: Stats
+                name: stats
+                widget: list
+                fields:
+                  - { label: Number, name: num, widget: string }
+                  - { label: Label, name: label, widget: string }
+
+          - label: Contact
+            name: contact
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Title (use \n for line break), name: title, widget: string }
+              - { label: Subtitle, name: sub, widget: text }
+              - { label: Info heading, name: infoTitle, widget: string }
+              - { label: Info blurb, name: infoBlurb, widget: text }
+              - label: Email channels
+                name: channels
+                widget: list
+                fields:
+                  - { label: Label, name: label, widget: string }
+                  - { label: Email, name: value, widget: string }
+              - label: Form subject options
+                name: subjects
+                widget: list
+                field: { label: Subject, name: subject, widget: string }
+              - label: Social links
+                name: socials
+                widget: list
+                fields:
+                  - { label: Short label, name: label, widget: string, hint: 2 letters e.g. IG }
+                  - { label: URL, name: href, widget: string }
+                  - { label: Title attr, name: title, widget: string }
+              - { label: Footer note, name: footerNote, widget: string }
+
+  # ──────────────────────────────────────────────
+  # EVENTS
+  # ──────────────────────────────────────────────
+  - name: events
+    label: Events
+    description: Upcoming shows.
+    files:
+      - file: content/events.json
+        name: events
+        label: Events list
+        format: json
+        fields:
+          - { label: Eyebrow, name: eyebrow, widget: string }
+          - { label: Title (use \n for line break), name: title, widget: string }
+          - { label: Subtitle, name: sub, widget: text }
+          - { label: Archive separator label, name: archiveLabel, widget: string }
+          - label: Gigs
+            name: items
+            widget: list
+            fields:
+              - { label: Month + day-of-week (e.g. MAY · SAT), name: monthLabel, widget: string }
+              - { label: Day number, name: day, widget: string }
+              - { label: Venue, name: venue, widget: string }
+              - { label: City (uppercase e.g. ZÜRICH · CH), name: city, widget: string }
+              - { label: Meta (e.g. DOORS 20:00), name: meta, widget: string }
+              - { label: Price, name: price, widget: string }
+              - { label: Tag (optional, e.g. FEW LEFT), name: tag, widget: string, required: false }
+              - label: Tag style
+                name: tagKind
+                widget: select
+                required: false
+                options:
+                  - { label: 'Featured (pink)', value: featured }
+                  - { label: 'Sold out (outline)', value: soldout }
+              - { label: Sold out (dims the row), name: soldOut, widget: boolean, default: false, required: false }
+              - { label: Link URL, name: href, widget: string, required: false, default: '#' }
+
+  # ──────────────────────────────────────────────
+  # MUSIC
+  # ──────────────────────────────────────────────
+  - name: music
+    label: Music
+    description: Videos / tracks shown in the music grid.
+    files:
+      - file: content/music.json
+        name: music
+        label: Music list
+        format: json
+        fields:
+          - { label: Eyebrow, name: eyebrow, widget: string }
+          - { label: Title, name: title, widget: string }
+          - { label: Subtitle, name: sub, widget: text }
+          - label: Items
+            name: items
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Kind (OFFICIAL VIDEO / LIVE / DEMO …), name: kind, widget: string }
+              - { label: Length (mm:ss), name: length, widget: string }
+              - { label: Year, name: year, widget: string, required: false }
+              - { label: Featured (large card), name: featured, widget: boolean, default: false, required: false }
+              - { label: Badge (e.g. ★ NEW SINGLE), name: badge, widget: string, required: false }
+              - { label: Thumbnail image, name: thumb, widget: image, required: false, media_folder: '/public/assets', public_folder: '/assets' }
+              - { label: Thumb CSS position (e.g. 'center 20%'), name: thumbPosition, widget: string, required: false }
+              - { label: Link URL, name: href, widget: string, required: false, default: '#' }
+
+  # ──────────────────────────────────────────────
+  # MEMBERS
+  # ──────────────────────────────────────────────
+  - name: members
+    label: Members
+    description: Band lineup.
+    files:
+      - file: content/members.json
+        name: members
+        label: Members list
+        format: json
+        fields:
+          - { label: Eyebrow, name: eyebrow, widget: string }
+          - { label: Title (use \n for line break), name: title, widget: string }
+          - { label: Subtitle, name: sub, widget: text }
+          - label: Members
+            name: items
+            widget: list
+            fields:
+              - { label: Number (e.g. 01), name: number, widget: string }
+              - { label: Stage name, name: stageName, widget: string }
+              - { label: A.K.A. line, name: aka, widget: string }
+              - { label: Role, name: role, widget: string }
+              - { label: Photo, name: photo, widget: image, required: false, media_folder: '/public/assets', public_folder: '/assets' }
+
+  # ──────────────────────────────────────────────
+  # SPONSORS / SUPPORT
+  # ──────────────────────────────────────────────
+  - name: sponsors
+    label: Support
+    description: Patron + sponsor cards.
+    files:
+      - file: content/sponsors.json
+        name: sponsors
+        label: Support cards
+        format: json
+        fields:
+          - { label: Eyebrow, name: eyebrow, widget: string }
+          - { label: Title (use \n for line break), name: title, widget: string }
+          - { label: Subtitle, name: sub, widget: text }
+          - label: Cards
+            name: cards
+            widget: list
+            fields:
+              - { label: Icon (e.g. ✚ or ★), name: iconStamp, widget: string }
+              - { label: Kicker (e.g. / FOR FANS), name: kicker, widget: string }
+              - { label: Heading, name: heading, widget: string }
+              - { label: Blurb, name: blurb, widget: text }
+              - label: Bullet points
+                name: bullets
+                widget: list
+                field: { label: Bullet, name: bullet, widget: string }
+              - { label: CTA label, name: ctaLabel, widget: string }
+              - { label: CTA href, name: ctaHref, widget: string }
+              - label: CTA style
+                name: ctaStyle
+                widget: select
+                options:
+                  - { label: 'Primary (pink)', value: primary }
+                  - { label: 'Ghost (outline)', value: ghost }

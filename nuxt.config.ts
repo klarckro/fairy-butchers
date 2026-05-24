@@ -6,6 +6,11 @@ export default defineNuxtConfig({
     '@nuxt/content'
   ],
   css: ['~/assets/css/main.css'],
+  runtimeConfig: {
+    // Nuxt auto-maps env vars NUXT_DECAP_GITHUB_CLIENT_ID / NUXT_DECAP_GITHUB_CLIENT_SECRET → these keys.
+    decapGithubClientId: '',
+    decapGithubClientSecret: ''
+  },
   nitro: {
     preset: 'vercel',
     prerender: {
