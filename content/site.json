@@ -1,0 +1,65 @@
+{
+  "sideLabel": "EST. 2025 · ROCK · SWITZERLAND",
+  "hero": {
+    "eyebrow": "EST. 2025 · SWITZERLAND",
+    "titleLine1": "Fairy",
+    "titleLine2": "Butchers",
+    "tagHtml": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed <em>do eiusmod tempor</em> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    "primaryCta": "Next Show ✚",
+    "ghostCta": "Hear the Noise →",
+    "ribbonTag": "Now Booking →",
+    "ribbonItems": [
+      "SAT 23 MAY ✚ LOREM IPSUM, ZÜRICH",
+      "FRI 06 JUN ✚ DOLOR SIT, BERN",
+      "SAT 21 JUN ✚ CONSECTETUR, GENEVA",
+      "FRI 11 JUL ✚ ADIPISCING FEST"
+    ]
+  },
+  "marquee": [
+    "RAW · LOUD · BLOODY GOOD"
+  ],
+  "about": {
+    "eyebrow": "/ 04 — ABOUT",
+    "title": "Who We Are",
+    "sub": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "paragraphs": [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam."
+    ],
+    "stats": [
+      { "num": "142", "label": "Shows Played" },
+      { "num": "3", "label": "EPs Released" },
+      { "num": "12", "label": "Cleavers Owned" },
+      { "num": "∞", "label": "Hours Awake" }
+    ]
+  },
+  "contact": {
+    "eyebrow": "/ 06 — GET IN TOUCH",
+    "title": "Holler\nat Us",
+    "sub": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
+    "infoTitle": "Direct line",
+    "infoBlurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+    "channels": [
+      { "label": "/ BOOKING", "value": "booking@fairybutchers.ch" },
+      { "label": "/ PRESS", "value": "press@fairybutchers.ch" },
+      { "label": "/ EVERYTHING ELSE", "value": "hello@fairybutchers.ch" }
+    ],
+    "subjects": [
+      "Booking inquiry",
+      "Press / interview",
+      "Sponsorship",
+      "Fan mail",
+      "Other"
+    ],
+    "socials": [
+      { "label": "IG", "href": "#", "title": "Instagram" },
+      { "label": "FB", "href": "#", "title": "Facebook" },
+      { "label": "YT", "href": "#", "title": "YouTube" },
+      { "label": "SP", "href": "#", "title": "Spotify" },
+      { "label": "TT", "href": "#", "title": "TikTok" },
+      { "label": "BC", "href": "#", "title": "Bandcamp" }
+    ],
+    "footerNote": "© 2026 FAIRY BUTCHERS · ALL RIGHTS RESERVED · MADE WITH ✚ IN SWITZERLAND"
+  }
+}

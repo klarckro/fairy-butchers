@@ -1,0 +1,37 @@
+{
+  "eyebrow": "/ 05 — SUPPORT US",
+  "title": "Feed the\nBeast",
+  "sub": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
+  "cards": [
+    {
+      "iconStamp": "✚",
+      "kicker": "/ FOR FANS",
+      "heading": "Become a Patron",
+      "blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore.",
+      "bullets": [
+        "Lorem ipsum dolor sit amet",
+        "Consectetur adipiscing elit sed",
+        "Eiusmod tempor incididunt ut",
+        "Ut enim ad minim veniam"
+      ],
+      "ctaLabel": "Join from 20 CHF/mo →",
+      "ctaHref": "#",
+      "ctaStyle": "primary"
+    },
+    {
+      "iconStamp": "★",
+      "kicker": "/ FOR BRANDS",
+      "heading": "Sponsor a Show",
+      "blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.",
+      "bullets": [
+        "Lorem ipsum dolor sit amet",
+        "Consectetur adipiscing elit",
+        "Eiusmod tempor incididunt",
+        "Custom packages from 5,000 CHF"
+      ],
+      "ctaLabel": "Request the deck →",
+      "ctaHref": "#contact",
+      "ctaStyle": "ghost"
+    }
+  ]
+}

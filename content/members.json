@@ -1,0 +1,31 @@
+{
+  "eyebrow": "/ 03 — THE BAND",
+  "title": "Meet the\nButchers",
+  "sub": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "items": [
+    {
+      "number": "01",
+      "stageName": "The Fairy",
+      "aka": "A.K.A. — TBD",
+      "role": "Vocals · Cleaver"
+    },
+    {
+      "number": "02",
+      "stageName": "The Butcher",
+      "aka": "A.K.A. — TBD",
+      "role": "Lead Guitar"
+    },
+    {
+      "number": "03",
+      "stageName": "Bone Saw",
+      "aka": "A.K.A. — TBD",
+      "role": "Bass"
+    },
+    {
+      "number": "04",
+      "stageName": "Mincer",
+      "aka": "A.K.A. — TBD",
+      "role": "Drums"
+    }
+  ]
+}
