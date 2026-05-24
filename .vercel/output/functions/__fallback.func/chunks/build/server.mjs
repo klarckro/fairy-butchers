@@ -9,7 +9,6 @@ import 'node:buffer';
 import 'node:fs';
 import 'node:path';
 import 'node:crypto';
-import 'better-sqlite3';
 
 function flatHooks(configHooks, hooks = {}, parentName) {
 	for (const key in configHooks) {
@@ -583,25 +582,29 @@ function toArray(value) {
   return Array.isArray(value) ? value : [value];
 }
 const matcher = /* @__PURE__ */ (() => {
-  const $0 = { prerender: true }, $1 = { payload: false };
+  const $0 = { redirect: "/admin/" }, $1 = { prerender: true }, $2 = {}, $3 = { payload: false };
   return (m, p) => {
     let r = [];
     if (p.charCodeAt(p.length - 1) === 47) p = p.slice(0, -1) || "/";
-    if (p === "/__nuxt_content/site/sql_dump.txt") {
+    if (p === "/admin") {
       r.unshift({ data: $0 });
+    } else if (p === "/__nuxt_content/site/sql_dump.txt") {
+      r.unshift({ data: $1 });
     } else if (p === "/__nuxt_content/events/sql_dump.txt") {
-      r.unshift({ data: $0 });
+      r.unshift({ data: $1 });
     } else if (p === "/__nuxt_content/music/sql_dump.txt") {
-      r.unshift({ data: $0 });
+      r.unshift({ data: $1 });
     } else if (p === "/__nuxt_content/members/sql_dump.txt") {
-      r.unshift({ data: $0 });
+      r.unshift({ data: $1 });
     } else if (p === "/__nuxt_content/sponsors/sql_dump.txt") {
-      r.unshift({ data: $0 });
+      r.unshift({ data: $1 });
     }
     let s = p.split("/"), l = s.length;
     if (l > 1) {
-      if (s[1] === "__nuxt_content") {
-        r.unshift({ data: $1, params: { "_": s.slice(2).join("/") } });
+      if (s[1] === "admin") {
+        r.unshift({ data: $2, params: { "_": s.slice(2).join("/") } });
+      } else if (s[1] === "__nuxt_content") {
+        r.unshift({ data: $3, params: { "_": s.slice(2).join("/") } });
       }
     }
     return r;
@@ -618,11 +621,18 @@ function getRouteRules(arg) {
     return {};
   }
 }
+const __nuxt_page_meta = null;
+const component_45stub_VNgFFRQGLDhG0Aib8iAj1ld5ojPBV79scU7lAX56_U = {};
 const _routes = [
   {
     name: "index",
     path: "/",
     component: () => import('./index-fupkYy7G.mjs')
+  },
+  {
+    name: __nuxt_page_meta?.name,
+    path: "/admin",
+    component: component_45stub_VNgFFRQGLDhG0Aib8iAj1ld5ojPBV79scU7lAX56_U
   }
 ];
 const ROUTE_KEY_PARENTHESES_RE = /(:\w+)\([^)]+\)/g;

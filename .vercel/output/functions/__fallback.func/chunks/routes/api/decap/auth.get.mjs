@@ -6,7 +6,6 @@ import 'node:buffer';
 import 'node:fs';
 import 'node:path';
 import 'node:crypto';
-import 'better-sqlite3';
 
 const auth_get = defineEventHandler((event) => {
   const config = useRuntimeConfig();

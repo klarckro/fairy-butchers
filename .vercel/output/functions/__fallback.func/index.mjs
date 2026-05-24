@@ -6,5 +6,4 @@ import 'node:buffer';
 import 'node:fs';
 import 'node:path';
 import 'node:crypto';
-import 'better-sqlite3';
 //# sourceMappingURL=index.mjs.map

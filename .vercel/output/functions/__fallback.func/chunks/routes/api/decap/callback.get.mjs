@@ -6,7 +6,6 @@ import 'node:buffer';
 import 'node:fs';
 import 'node:path';
 import 'node:crypto';
-import 'better-sqlite3';
 
 const callback_get = defineEventHandler(async (event) => {
   var _a, _b;

@@ -3,6 +3,9 @@
   "overrides": {
     "index.html": {
       "path": ""
+    },
+    "admin/index.html": {
+      "path": "admin"
     }
   },
   "routes": [
@@ -17,6 +20,13 @@
         "cache-control": "public, max-age=1, immutable"
       },
       "src": "/_nuxt/builds/(.*)"
+    },
+    {
+      "status": 307,
+      "headers": {
+        "Location": "/admin/"
+      },
+      "src": "/admin"
     },
     {
       "headers": {
@@ -50,6 +60,10 @@
     },
     {
       "src": "(?<__isr_route>/__nuxt_error)",
+      "dest": "/__fallback"
+    },
+    {
+      "src": "(?<__isr_route>/admin/(?:.*))",
       "dest": "/__fallback"
     },
     {

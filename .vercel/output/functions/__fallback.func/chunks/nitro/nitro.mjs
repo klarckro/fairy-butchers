@@ -5,7 +5,6 @@ import { Buffer as Buffer$1 } from 'node:buffer';
 import { promises, existsSync, mkdirSync } from 'node:fs';
 import { resolve, dirname, join } from 'node:path';
 import { createHash } from 'node:crypto';
-import Database from 'better-sqlite3';
 
 const suspectProtoRx = /"(?:_|\\u0{2}5[Ff]){2}(?:p|\\u0{2}70)(?:r|\\u0{2}72)(?:o|\\u0{2}6[Ff])(?:t|\\u0{2}74)(?:o|\\u0{2}6[Ff])(?:_|\\u0{2}5[Ff]){2}"\s*:/;
 const suspectConstructorRx = /"(?:c|\\u0063)(?:o|\\u006[Ff])(?:n|\\u006[Ee])(?:s|\\u0073)(?:t|\\u0074)(?:r|\\u0072)(?:u|\\u0075)(?:c|\\u0063)(?:t|\\u0074)(?:o|\\u006[Ff])(?:r|\\u0072)"\s*:/;
@@ -4084,7 +4083,7 @@ function _expandFromEnv(value) {
 const _inlineRuntimeConfig = {
   "app": {
     "baseURL": "/",
-    "buildId": "dc79f35b-686d-44c2-a213-ba6f212ed6f3",
+    "buildId": "0185497c-d153-446c-a2f4-4654676dac84",
     "buildAssetsDir": "/_nuxt/",
     "cdnURL": ""
   },
@@ -4093,6 +4092,16 @@ const _inlineRuntimeConfig = {
     "routeRules": {
       "/__nuxt_error": {
         "cache": false,
+        "isr": false
+      },
+      "/admin": {
+        "redirect": {
+          "to": "/admin/",
+          "statusCode": 307
+        }
+      },
+      "/admin/**": {
+        "static": true,
         "isr": false
       },
       "/__nuxt_content/**": {
@@ -4844,26 +4853,33 @@ class BoundStatement {
 	}
 }
 
-function sqliteConnector(opts) {
+function nodeSqlite3Connector(opts) {
 	let _db;
 	const getDB = () => {
 		if (_db) {
 			return _db;
 		}
+		const nodeSqlite = globalThis.process?.getBuiltinModule?.("node:sqlite");
+		if (!nodeSqlite) {
+			throw new Error("`node:sqlite` module is not available. Please ensure you are running in Node.js >= 22.5 or Deno >= 2.2.");
+		}
 		if (opts.name === ":memory:") {
-			_db = new Database(":memory:");
+			_db = new nodeSqlite.DatabaseSync(":memory:");
 			return _db;
 		}
-		const filePath = resolve(opts.cwd || ".", opts.path || `.data/${opts.name || "db"}.sqlite3`);
+		const filePath = resolve(opts.cwd || ".", opts.path || `.data/${opts.name || "db"}.sqlite`);
 		mkdirSync(dirname(filePath), { recursive: true });
-		_db = new Database(filePath);
+		_db = new nodeSqlite.DatabaseSync(filePath);
 		return _db;
 	};
 	return {
-		name: "sqlite",
+		name: "node-sqlite",
 		dialect: "sqlite",
 		getInstance: () => getDB(),
-		exec: (sql) => getDB().exec(sql),
+		exec(sql) {
+			getDB().exec(sql);
+			return { success: true };
+		},
 		prepare: (sql) => new StatementWrapper(() => getDB().prepare(sql)),
 		dispose: () => {
 			_db?.close?.();
@@ -4873,28 +4889,40 @@ function sqliteConnector(opts) {
 }
 class StatementWrapper extends BoundableStatement {
 	async all(...params) {
-		return this._statement().all(...params);
+		const raws = this._statement().all(...params);
+		return raws;
 	}
 	async run(...params) {
 		const res = this._statement().run(...params);
 		return {
-			success: res.changes > 0,
+			success: true,
 			...res
 		};
 	}
 	async get(...params) {
-		return this._statement().get(...params);
+		const raw = this._statement().get(...params);
+		return raw;
 	}
 }
+
+const originalEmit = process.emit;
+process.emit = function(...args) {
+  const name = args[0];
+  const data = args[1];
+  if (name === `warning` && typeof data === `object` && data.name === `ExperimentalWarning` && data.message.includes(`SQLite is an experimental feature`)) {
+    return false;
+  }
+  return originalEmit.apply(process, args);
+};
 
 let db;
 function loadDatabaseAdapter(config) {
   const { database, localDatabase } = config;
   if (!db) {
     if (["nitro-prerender", "nitro-dev"].includes("vercel")) {
-      db = sqliteConnector(refineDatabaseConfig(localDatabase));
+      db = nodeSqlite3Connector(refineDatabaseConfig(localDatabase));
     } else {
-      db = sqliteConnector(refineDatabaseConfig(database));
+      db = nodeSqlite3Connector(refineDatabaseConfig(database));
     }
   }
   return {

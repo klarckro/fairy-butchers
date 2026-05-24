@@ -1,0 +1,1 @@
+import{a as s,i as o,Q as r,I as n}from"./BadalHlB.js";const t={};function a(e,c){return n(),o("ol",null,[r(e.$slots,"default")])}const _=Object.assign(s(t,[["render",a]]),{__name:"ProseOl"});export{_ as default};

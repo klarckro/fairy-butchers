@@ -9,7 +9,6 @@ import 'node:buffer';
 import 'node:fs';
 import 'node:path';
 import 'node:crypto';
-import 'better-sqlite3';
 import 'vue-router';
 
 const ImageComponent = "img";
