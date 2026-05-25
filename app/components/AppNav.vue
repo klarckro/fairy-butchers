@@ -1,16 +1,22 @@
 <script setup lang="ts">
+const { t, locale } = useI18n()
+const switchLocalePath = useSwitchLocalePath()
+
 const sections = ['events', 'music', 'members', 'about', 'support', 'contact'] as const
 const activeId = ref<string>('events')
 const menuOpen = ref(false)
 
-const links = [
-  { id: 'events', label: 'Events' },
-  { id: 'music', label: 'Our Music' },
-  { id: 'members', label: 'Members' },
-  { id: 'about', label: 'About' },
-  { id: 'support', label: 'Support' },
-  { id: 'contact', label: 'Contact' }
-]
+const links = computed(() => [
+  { id: 'events', label: t('nav.events') },
+  { id: 'music', label: t('nav.music') },
+  { id: 'members', label: t('nav.members') },
+  { id: 'about', label: t('nav.about') },
+  { id: 'support', label: t('nav.support') },
+  { id: 'contact', label: t('nav.contact') }
+])
+
+const otherLocale = computed(() => (locale.value === 'en' ? 'de' : 'en'))
+const switchLabel = computed(() => (locale.value === 'en' ? 'DE' : 'EN'))
 
 function smoothScrollTo(id: string) {
   menuOpen.value = false
@@ -61,12 +67,17 @@ onBeforeUnmount(() => {
           @click="(e) => handleNavClick(e, l.id)"
         >{{ l.label }}</a>
       </div>
-      <button class="nav-cta" type="button" @click="smoothScrollTo('events')">Get Tickets ✚</button>
+      <NuxtLink class="lang-switch" :to="switchLocalePath(otherLocale)" :aria-label="`Switch to ${switchLabel}`">
+        {{ switchLabel }}
+      </NuxtLink>
+      <button class="nav-cta" type="button" @click="smoothScrollTo('events')">
+        {{ t('nav.getTickets') }}
+      </button>
       <button
         class="nav-toggle"
         type="button"
         :aria-expanded="menuOpen"
-        aria-label="Toggle menu"
+        :aria-label="t('nav.toggleMenu')"
         @click="menuOpen = !menuOpen"
       >{{ menuOpen ? '×' : '☰' }}</button>
     </div>

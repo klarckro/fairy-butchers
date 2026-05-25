@@ -1,0 +1,42 @@
+{
+  "eyebrow": "/ 02 — OUR MUSIC",
+  "title": "Listen, Loud.",
+  "sub": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+  "items": [
+    {
+      "title": "Lorem Ipsum",
+      "kind": "OFFICIAL VIDEO",
+      "length": "04:12",
+      "year": "2026",
+      "featured": true,
+      "badge": "★ NEW SINGLE",
+      "thumb": "/assets/cleaver-stage.jpeg",
+      "thumbPosition": "center 20%",
+      "href": "#"
+    },
+    {
+      "title": "Dolor Sit",
+      "kind": "LIVE",
+      "length": "06:40",
+      "href": "#"
+    },
+    {
+      "title": "Consectetur",
+      "kind": "DEMO",
+      "length": "03:28",
+      "href": "#"
+    },
+    {
+      "title": "Adipiscing Elit",
+      "kind": "STUDIO",
+      "length": "05:15",
+      "href": "#"
+    },
+    {
+      "title": "Eiusmod Tempor",
+      "kind": "ACOUSTIC",
+      "length": "02:54",
+      "href": "#"
+    }
+  ]
+}

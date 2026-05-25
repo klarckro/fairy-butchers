@@ -13,6 +13,8 @@ interface ContactData {
 
 defineProps<{ data: ContactData }>()
 
+const { t } = useI18n()
+
 const form = reactive({
   name: '',
   email: '',
@@ -36,27 +38,27 @@ function handleSubmit() {
       <div class="contact-grid">
         <form class="contact-form" @submit.prevent="handleSubmit">
           <div>
-            <label for="contact-name">Name</label>
-            <input id="contact-name" v-model="form.name" required placeholder="Your name" />
+            <label for="contact-name">{{ t('contact.name') }}</label>
+            <input id="contact-name" v-model="form.name" required :placeholder="t('contact.namePlaceholder')" />
           </div>
           <div class="row">
             <div>
-              <label for="contact-email">Email</label>
-              <input id="contact-email" v-model="form.email" required type="email" placeholder="you@somewhere.ch" />
+              <label for="contact-email">{{ t('contact.email') }}</label>
+              <input id="contact-email" v-model="form.email" required type="email" :placeholder="t('contact.emailPlaceholder')" />
             </div>
             <div>
-              <label for="contact-subject">Subject</label>
+              <label for="contact-subject">{{ t('contact.subject') }}</label>
               <select id="contact-subject" v-model="form.subject">
                 <option v-for="s in data.subjects" :key="s">{{ s }}</option>
               </select>
             </div>
           </div>
           <div>
-            <label for="contact-message">Message</label>
-            <textarea id="contact-message" v-model="form.message" required placeholder="Tell us what's up." />
+            <label for="contact-message">{{ t('contact.message') }}</label>
+            <textarea id="contact-message" v-model="form.message" required :placeholder="t('contact.messagePlaceholder')" />
           </div>
           <div>
-            <button type="submit" class="btn btn-primary">{{ sent ? 'Sent ✚' : 'Send it ✚' }}</button>
+            <button type="submit" class="btn btn-primary">{{ sent ? t('contact.sent') : t('contact.send') }}</button>
           </div>
         </form>
 

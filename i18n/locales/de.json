@@ -1,0 +1,30 @@
+{
+  "nav": {
+    "events": "Events",
+    "music": "Musik",
+    "members": "Mitglieder",
+    "about": "Über uns",
+    "support": "Unterstützen",
+    "contact": "Kontakt",
+    "getTickets": "Tickets ✚",
+    "toggleMenu": "Menü umschalten"
+  },
+  "contact": {
+    "name": "Name",
+    "namePlaceholder": "Dein Name",
+    "email": "E-Mail",
+    "emailPlaceholder": "du{'@'}irgendwo.ch",
+    "subject": "Betreff",
+    "message": "Nachricht",
+    "messagePlaceholder": "Erzähl uns, was los ist.",
+    "send": "Abschicken ✚",
+    "sent": "Gesendet ✚"
+  },
+  "language": {
+    "switchTo": "EN"
+  },
+  "meta": {
+    "title": "Fairy Butchers — Roh · Laut · Verdammt gut",
+    "description": "Fairy Butchers — eine Rockband aus der Schweiz. Konzerte, Musik und wie man das Biest füttert."
+  }
+}

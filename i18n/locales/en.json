@@ -1,0 +1,30 @@
+{
+  "nav": {
+    "events": "Events",
+    "music": "Our Music",
+    "members": "Members",
+    "about": "About",
+    "support": "Support",
+    "contact": "Contact",
+    "getTickets": "Get Tickets ✚",
+    "toggleMenu": "Toggle menu"
+  },
+  "contact": {
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "emailPlaceholder": "you{'@'}somewhere.ch",
+    "subject": "Subject",
+    "message": "Message",
+    "messagePlaceholder": "Tell us what's up.",
+    "send": "Send it ✚",
+    "sent": "Sent ✚"
+  },
+  "language": {
+    "switchTo": "DE"
+  },
+  "meta": {
+    "title": "Fairy Butchers — Raw · Loud · Bloody Good",
+    "description": "Fairy Butchers — a rock band from Switzerland. Shows, music, and how to feed the beast."
+  }
+}
