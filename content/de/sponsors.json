@@ -19,16 +19,16 @@
     },
     {
       "iconStamp": "★",
-      "kicker": "/ FOR BRANDS",
-      "heading": "Sponsor a Show",
+      "kicker": "/ FÜR BANDS",
+      "heading": "Gig sponsern",
       "blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.",
       "bullets": [
-        "Lorem ipsum dolor sit amet",
-        "Consectetur adipiscing elit",
-        "Eiusmod tempor incididunt",
-        "Custom packages from 5,000 CHF"
+        "<Markenpräsenz> : Sichtbarkeit auf unserer Website, Social Media und bei Live-Events.",
+        "<Werbemöglichkeiten> : Logo auf Werbematerialien sowie Promotion vor Ort und online.",
+        "<Lokales Engagement> : Unterstütze die regionale Musik- und Kulturszene und werde Teil unserer Community.",
+        "<Flexible Partnerschaften> : Individuelle Sponsoring-Pakete, abgestimmt auf deine Ziele und dein Budget."
       ],
-      "ctaLabel": "Request the deck →",
+      "ctaLabel": "Sponsoring-Unterlagen anfordern →",
       "ctaHref": "#contact",
       "ctaStyle": "ghost"
     }
