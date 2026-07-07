@@ -25,15 +25,15 @@
       "href": "#"
     },
     {
-      "monthLabel": "JUN · SAT",
-      "day": "21",
-      "venue": "Consectetur Club",
-      "city": "GENEVA · CH",
-      "meta": "DOORS 21:00",
-      "price": "— —",
-      "tag": "SOLD OUT",
-      "tagKind": "soldout",
-      "soldOut": true,
+      "monthLabel": "XX · XX",
+      "day": "XX",
+      "venue": "TBD",
+      "city": "TBD · CH",
+      "meta": "DOORS XX:XX",
+      "price": "XX CHF",
+      "tag": "",
+      "tagKind": "featured",
+      "soldOut": false,
       "href": "#"
     },
     {
