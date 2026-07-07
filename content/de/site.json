@@ -48,20 +48,20 @@
     "eyebrow": "/ 06 — GET IN TOUCH",
     "title": "Holler\nat Us",
     "sub": "Comments, Wishes, Support, Hate",
-    "infoTitle": "Direct line",
-    "infoBlurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+    "infoTitle": "Direktverbindung",
+    "infoBlurb": "Schreib uns :)",
     "channels": [
       {
         "label": "/ BOOKING",
-        "value": "booking@fairybutchers.ch"
+        "value": "fairybutchers@outlook.com"
       },
       {
         "label": "/ PRESS",
-        "value": "press@fairybutchers.ch"
+        "value": "fairybutchers@outlook.com"
       },
       {
         "label": "/ EVERYTHING ELSE",
-        "value": "hello@fairybutchers.ch"
+        "value": "fairybutchers@outlook.com"
       }
     ],
     "subjects": [
