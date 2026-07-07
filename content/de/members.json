@@ -1,7 +1,7 @@
 {
   "eyebrow": "/ 03 — THE BAND",
   "title": "Lerne die Metzger kennen",
-  "sub": "Eine Sängerin, Ein Gitarrist, Ein Bassist, Ein Drummer",
+  "sub": "Eine Sängerin, Ein Gitarrist, Ein Bassist, Ein Schlagzeuger",
   "items": [
     {
       "number": "01",
@@ -28,7 +28,8 @@
       "number": "04",
       "stageName": "Fleischwolf",
       "aka": "A.K.A. — Silly the Machinegun",
-      "role": "Schlagzeug"
+      "role": "Schlagzeug",
+      "photo": "/assets/silvan2.jpeg"
     }
   ]
 }
