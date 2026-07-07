@@ -23,45 +23,6 @@
       "meta": "DOORS XX:XX",
       "price": "XX CHF",
       "href": "#"
-    },
-    {
-      "monthLabel": "JUN · SAT",
-      "day": "21",
-      "venue": "Consectetur Club",
-      "city": "GENEVA · CH",
-      "meta": "DOORS 21:00",
-      "price": "— —",
-      "tag": "SOLD OUT",
-      "tagKind": "soldout",
-      "soldOut": true,
-      "href": "#"
-    },
-    {
-      "monthLabel": "JUL · FRI",
-      "day": "11",
-      "venue": "Adipiscing Festival",
-      "city": "LAUSANNE · CH",
-      "meta": "FESTIVAL",
-      "price": "FROM 180 CHF",
-      "href": "#"
-    },
-    {
-      "monthLabel": "AUG · SAT",
-      "day": "02",
-      "venue": "Eiusmod Tempor",
-      "city": "BASEL · CH",
-      "meta": "DOORS 20:00",
-      "price": "55 CHF",
-      "href": "#"
-    },
-    {
-      "monthLabel": "SEP · SAT",
-      "day": "13",
-      "venue": "Incididunt Bar",
-      "city": "LUCERNE · CH",
-      "meta": "DOORS 20:30",
-      "price": "50 CHF",
-      "href": "#"
     }
   ]
 }
