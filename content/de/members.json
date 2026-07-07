@@ -1,13 +1,14 @@
 {
   "eyebrow": "/ 03 — THE BAND",
-  "title": "Meet the\nButchers",
-  "sub": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "title": "Lerne die Metzger kennen",
+  "sub": "Eine Sängerin, Ein Gitarrist, Ein Bassist, Ein Drummer",
   "items": [
     {
       "number": "01",
       "stageName": "The Fairy",
-      "aka": "A.K.A. — TBD",
-      "role": "Vocals · Cleaver"
+      "aka": "A.K.A. — Olivia",
+      "role": "Gesang · Hackmesser",
+      "photo": "/assets/olivia2.jpeg"
     },
     {
       "number": "02",
