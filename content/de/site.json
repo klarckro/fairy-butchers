@@ -45,7 +45,7 @@
     ]
   },
   "contact": {
-    "eyebrow": "/ 06 — GET IN TOUCH",
+    "eyebrow": "/ 06 — NIMM KONTAKT AUF",
     "title": "Melde dich bei uns",
     "sub": "Kommentare, Wünsche, Unterstützung, Hate",
     "infoTitle": "Direktverbindung",
@@ -65,11 +65,11 @@
       }
     ],
     "subjects": [
-      "Booking inquiry",
-      "Press / interview",
-      "Sponsorship",
-      "Fan mail",
-      "Other"
+      "Buchungsanfrage",
+      "Press / Interview",
+      "Sponsoring",
+      "Fan-Mail",
+      "Anderes"
     ],
     "socials": [
       {
