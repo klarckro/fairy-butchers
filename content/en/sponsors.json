@@ -1,20 +1,18 @@
 {
   "eyebrow": "/ 05 — SUPPORT US",
-  "title": "Feed theB east",
-  "sub": "Though we give everything for you and try to make music the whole time, it is also a matter of cost. There are a few way to support us. Either become a Patron and sponsore us for 5-20.-/ Mth. so we can pay rent, pay for out trips to the venues etc. ",
+  "title": "Feed the Beast ",
+  "sub": "Sponsor your local Band.\nThough we give everything for you and try to make music the whole time, it is also a matter of cost. There are a few way to support us. Either become a Patron and sponsore us for 5-20.-/ Mo. There are benefits for you as a Patron for e.g. Become more insights in our Band, End of the Month Party/ Gig. ",
   "cards": [
     {
       "iconStamp": "✚",
       "kicker": "/ FOR FANS",
       "heading": "Become a Patron",
-      "blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore.",
+      "blurb": "Support your local band. Help us to play as many Gigs as we can. Though we need support for our rent/ travelexpences/ Material/ Photographer/ Videographer etc. If you can spare 5 .- CHF/Mo, we'll play even louder only for you.",
       "bullets": [
-        "Lorem ipsum dolor sit amet",
-        "Consectetur adipiscing elit sed",
-        "Eiusmod tempor incididunt ut",
-        "Ut enim ad minim veniam"
+        "End of the Month Party - FREE",
+        "Insights in our Band"
       ],
-      "ctaLabel": "Join from 20 CHF/mo →",
+      "ctaLabel": "Join from 5 CHF/mo →",
       "ctaHref": "#",
       "ctaStyle": "primary"
     },
