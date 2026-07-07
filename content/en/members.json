@@ -1,13 +1,14 @@
 {
   "eyebrow": "/ 03 — THE BAND",
-  "title": "Meet the\nButchers",
+  "title": "Meet the Butchers",
   "sub": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   "items": [
     {
       "number": "01",
       "stageName": "The Fairy",
-      "aka": "A.K.A. — TBD",
-      "role": "Vocals · Cleaver"
+      "aka": "A.K.A. — Olivia",
+      "role": "Vocals · Cleaver",
+      "photo": "/assets/olivia.jpeg"
     },
     {
       "number": "02",
