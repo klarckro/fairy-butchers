@@ -14,27 +14,6 @@
       "tag": "",
       "tagKind": "featured",
       "href": "#"
-    },
-    {
-      "monthLabel": "XX · XX",
-      "day": "XX",
-      "venue": "TBD",
-      "city": "BERN · CH",
-      "meta": "DOORS XX:XX",
-      "price": "XX CHF",
-      "href": "#"
-    },
-    {
-      "monthLabel": "XX · XX",
-      "day": "XX",
-      "venue": "TBD",
-      "city": "TBD · CH",
-      "meta": "DOORS XX:XX",
-      "price": "XX CHF",
-      "tag": "",
-      "tagKind": "featured",
-      "soldOut": false,
-      "href": "#"
     }
   ]
 }
