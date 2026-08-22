@@ -202,7 +202,7 @@ const sponsorsFields: any[] = [
 // Per-locale collections
 // ──────────────────────────────────────────────
 
-function localeCollections(localeCode: 'en' | 'de', localeName: string) {
+function localeCollections(localeCode: 'en' | 'de' | 'pt', localeName: string) {
   const path = `content/${localeCode}`
   const lockSingleton = { allowedActions: { create: false, delete: false } }
   return [
@@ -234,7 +234,8 @@ export default defineConfig({
   schema: {
     collections: [
       ...localeCollections('en', '🇬🇧 English'),
-      ...localeCollections('de', '🇩🇪 Deutsch')
+      ...localeCollections('de', '🇩🇪 Deutsch'),
+      ...localeCollections('pt', '🇵🇹 Português')
     ]
   }
 })

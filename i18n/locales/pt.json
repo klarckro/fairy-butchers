@@ -1,0 +1,32 @@
+{
+  "nav": {
+    "events": "Eventos",
+    "music": "A Nossa Música",
+    "members": "Membros",
+    "about": "Sobre",
+    "support": "Apoiar",
+    "contact": "Contacto",
+    "getTickets": "Bilhetes ✚",
+    "toggleMenu": "Alternar menu"
+  },
+  "contact": {
+    "name": "Nome",
+    "namePlaceholder": "O teu nome",
+    "email": "Email",
+    "emailPlaceholder": "tu{'@'}algures.ch",
+    "subject": "Assunto",
+    "message": "Mensagem",
+    "messagePlaceholder": "Diz-nos o que se passa.",
+    "send": "Enviar ✚",
+    "sent": "Enviado ✚",
+    "mailBlurb": "Escreve-nos diretamente para a nossa caixa de entrada.",
+    "mailCta": "Enviar Email ✚"
+  },
+  "language": {
+    "switchTo": "EN"
+  },
+  "meta": {
+    "title": "Fairy Butchers — Raw · Loud · Bloody Good",
+    "description": "Fairy Butchers — uma banda de rock da Suíça. Concertos, música e como alimentar a besta."
+  }
+}

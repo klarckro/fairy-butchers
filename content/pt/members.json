@@ -1,0 +1,35 @@
+{
+  "eyebrow": "/ 03 — THE BAND",
+  "title": "Conhece os Butchers",
+  "sub": "Uma Vocalista, Um Guitarrista, Um Baixista, Um Baterista",
+  "items": [
+    {
+      "number": "01",
+      "stageName": "A Fada",
+      "aka": "A.K.A. — Livy Cleaver",
+      "role": "Vocais · Cutelo",
+      "photo": "/assets/IMG-20260724-WA0043.jpg"
+    },
+    {
+      "number": "02",
+      "stageName": "O Carniceiro",
+      "aka": "A.K.A. — Freddy Jaxx",
+      "role": "Guitarra Solo",
+      "photo": "/assets/IMG-20260724-WA0022.jpg"
+    },
+    {
+      "number": "03",
+      "stageName": "Serra de Ossos",
+      "aka": "A.K.A. — Frank the Tank",
+      "role": "Baixo",
+      "photo": "/assets/IMG_5528c.JPG"
+    },
+    {
+      "number": "04",
+      "stageName": "Picadora",
+      "aka": "A.K.A. — Sillygun",
+      "role": "Bateria",
+      "photo": "/assets/IMG_5556.JPG"
+    }
+  ]
+}

@@ -7,11 +7,12 @@
   --ash: #1a1815;
   --char: #2a2622;
   --smoke: #4a443d;
+  --smoke-2: #968c7d;
   --pink: #ff2d6f;
   --pink-soft: #ff86a8;
   --blood: #6b1525;
 
-  --display: "UnifrakturCook", "Pirata One", serif;
+  --display: "Pirata One", "UnifrakturCook", serif;
   --display-2: "Pirata One", serif;
   --sans: "Barlow Condensed", "Helvetica Neue", sans-serif;
   --mono: "JetBrains Mono", monospace;
@@ -141,16 +142,23 @@ button { font: inherit; }
 }
 
 .lang-switch {
+  display: flex;
+  align-items: stretch;
+  border: 1px solid var(--smoke);
+  overflow: hidden;
+}
+.lang-switch a {
   font-family: var(--mono);
   font-weight: 700;
   font-size: 12px;
   letter-spacing: 0.18em;
-  padding: 8px 12px;
-  border: 1px solid var(--smoke);
+  padding: 8px 10px;
   color: var(--bone-2);
-  transition: color 0.2s, border-color 0.2s;
+  transition: color 0.2s, background-color 0.2s;
 }
-.lang-switch:hover { color: var(--pink); border-color: var(--pink); }
+.lang-switch a + a { border-left: 1px solid var(--smoke); }
+.lang-switch a:hover { color: var(--pink); }
+.lang-switch a.active { color: var(--ink); background: var(--pink); }
 
 /* === HERO === */
 .hero {
@@ -405,7 +413,7 @@ section { position: relative; }
 }
 .gig-venue .city {
   font-size: 13px;
-  color: var(--smoke);
+  color: var(--smoke-2);
   margin-top: 6px;
   letter-spacing: 0.2em;
   display: block;
@@ -425,7 +433,7 @@ section { position: relative; }
 .gig-arrow {
   font-family: var(--display);
   font-size: 32px;
-  color: var(--smoke);
+  color: var(--smoke-2);
   transition: color 0.2s, transform 0.2s;
 }
 .gig-tag {
@@ -440,7 +448,7 @@ section { position: relative; }
 }
 .gig-tag.soldout {
   background: transparent;
-  color: var(--smoke);
+  color: var(--smoke-2);
   border: 1px solid var(--smoke);
 }
 
@@ -591,7 +599,7 @@ section { position: relative; }
   font-family: var(--mono);
   font-size: 11px;
   letter-spacing: 0.25em;
-  color: var(--smoke);
+  color: var(--smoke-2);
   text-transform: uppercase;
 }
 .member-photo .number {
@@ -615,7 +623,7 @@ section { position: relative; }
 .member .real {
   font-family: var(--mono);
   font-size: 11px;
-  color: var(--smoke);
+  color: var(--smoke-2);
   letter-spacing: 0.2em;
   text-transform: uppercase;
   margin-bottom: 16px;
@@ -928,7 +936,7 @@ section { position: relative; }
   font-family: var(--mono);
   font-size: 10px;
   letter-spacing: 0.4em;
-  color: var(--smoke);
+  color: var(--smoke-2);
   z-index: 30;
   text-transform: uppercase;
   pointer-events: none;
@@ -1007,7 +1015,7 @@ section { position: relative; }
   .brand .mark { width: 32px; height: 32px; }
   .nav-links { display: none; }
   .nav-cta { display: none; }
-  .lang-switch { padding: 6px 10px; font-size: 11px; }
+  .lang-switch a { padding: 6px 8px; font-size: 11px; }
   .nav-toggle { display: inline-flex; }
 
   .nav.menu-open .nav-links {

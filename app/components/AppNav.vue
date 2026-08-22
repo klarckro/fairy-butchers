@@ -15,8 +15,7 @@ const links = computed(() => [
   { id: 'contact', label: t('nav.contact') }
 ])
 
-const otherLocale = computed(() => (locale.value === 'en' ? 'de' : 'en'))
-const switchLabel = computed(() => (locale.value === 'en' ? 'DE' : 'EN'))
+const localeOrder = ['en', 'de', 'pt'] as const
 
 function smoothScrollTo(id: string) {
   menuOpen.value = false
@@ -67,9 +66,15 @@ onBeforeUnmount(() => {
           @click="(e) => handleNavClick(e, l.id)"
         >{{ l.label }}</a>
       </div>
-      <NuxtLink class="lang-switch" :to="switchLocalePath(otherLocale)" :aria-label="`Switch to ${switchLabel}`">
-        {{ switchLabel }}
-      </NuxtLink>
+      <div class="lang-switch">
+        <NuxtLink
+          v-for="code in localeOrder"
+          :key="code"
+          :to="switchLocalePath(code)"
+          :class="{ active: locale === code }"
+          :aria-label="`Switch to ${code.toUpperCase()}`"
+        >{{ code.toUpperCase() }}</NuxtLink>
+      </div>
       <button class="nav-cta" type="button" @click="smoothScrollTo('events')">
         {{ t('nav.getTickets') }}
       </button>

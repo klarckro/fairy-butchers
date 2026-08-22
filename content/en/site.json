@@ -71,33 +71,13 @@
     "socials": [
       {
         "label": "IG",
-        "href": "#https://www.instagram.com/fairybutchers?igsh=MWd3cWFmemJ3MGE3bg==",
+        "href": "https://www.instagram.com/fairybutchers?igsh=MWd3cWFmemJ3MGE3bg==",
         "title": "Instagram"
       },
       {
-        "label": "FB",
-        "href": "#",
-        "title": "Facebook"
-      },
-      {
         "label": "YT",
-        "href": "#",
+        "href": "https://www.youtube.com/@FairyButchers",
         "title": "YouTube"
-      },
-      {
-        "label": "SP",
-        "href": "#",
-        "title": "Spotify"
-      },
-      {
-        "label": "TT",
-        "href": "#",
-        "title": "TikTok"
-      },
-      {
-        "label": "BC",
-        "href": "#",
-        "title": "Bandcamp"
       }
     ],
     "footerNote": "© 2026 FAIRY BUTCHERS · ALL RIGHTS RESERVED · MADE WITH ✚ IN SWITZERLAND"

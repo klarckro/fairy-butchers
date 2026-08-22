@@ -18,7 +18,9 @@
     "message": "Message",
     "messagePlaceholder": "Tell us what's up.",
     "send": "Send it ✚",
-    "sent": "Sent ✚"
+    "sent": "Sent ✚",
+    "mailBlurb": "Drop us a line straight to our inbox.",
+    "mailCta": "Email us ✚"
   },
   "language": {
     "switchTo": "DE"

@@ -1,0 +1,85 @@
+{
+  "sideLabel": "EST. 2025 · ROCK · SUÍÇA",
+  "hero": {
+    "eyebrow": "EST. 2025 · SUÍÇA",
+    "titleLine1": "Fairy",
+    "titleLine2": "Butchers",
+    "tagHtml": "Saídos do conto de fadas, aqui para cortar cabeças.",
+    "primaryCta": "Próximo Show ✚",
+    "ghostCta": "Ouve o Barulho →",
+    "ribbonTag": "",
+    "ribbonItems": [
+      "SÁB 7 NOV ✚ BANDROOM, WETZIKON"
+    ]
+  },
+  "marquee": [
+    "RAW · LOUD · BLOODY GOOD!"
+  ],
+  "about": {
+    "eyebrow": "/ 04 — SOBRE NÓS",
+    "title": "Quem Somos",
+    "sub": "Uma banda de Blues Rock / Rock de Wetzikon. ",
+    "paragraphs": [
+      "Somos quatro músicos do Zurique Oberland que se propuseram conquistar o topo. A correr a voltagem e cerveja. Tocamos sempre onde houver festa."
+    ],
+    "stats": [
+      {
+        "num": "0",
+        "label": "Shows Tocados"
+      },
+      {
+        "num": "0",
+        "label": "EPs Lançados"
+      },
+      {
+        "num": "Todos",
+        "label": "Cutelos Possuídos"
+      },
+      {
+        "num": "∞",
+        "label": "Horas Acordados"
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "/ 06 — FALA CONNOSCO",
+    "title": "Grita\npor Nós",
+    "sub": "Comentários, Desejos, Apoio, Ódio",
+    "infoTitle": "Linha Direta",
+    "infoBlurb": "Escreve-nos ;)",
+    "channels": [
+      {
+        "label": "/ RESERVAS",
+        "value": "fairybutchers@outlook.com"
+      },
+      {
+        "label": "/ IMPRENSA",
+        "value": "fairybutchers@outlook.com"
+      },
+      {
+        "label": "/ TUDO O RESTO",
+        "value": "fairybutchers@outlook.com"
+      }
+    ],
+    "subjects": [
+      "Pedido de reserva",
+      "Imprensa / entrevista",
+      "Patrocínio",
+      "Correio de fã",
+      "Outro"
+    ],
+    "socials": [
+      {
+        "label": "IG",
+        "href": "https://www.instagram.com/fairybutchers?igsh=MWd3cWFmemJ3MGE3bg==",
+        "title": "Instagram"
+      },
+      {
+        "label": "YT",
+        "href": "https://www.youtube.com/@FairyButchers",
+        "title": "YouTube"
+      }
+    ],
+    "footerNote": "© 2026 FAIRY BUTCHERS · TODOS OS DIREITOS RESERVADOS · FEITO COM ✚ NA SUÍÇA"
+  }
+}

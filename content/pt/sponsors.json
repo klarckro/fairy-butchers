@@ -1,0 +1,36 @@
+{
+  "eyebrow": "/ 05 — APOIA-NOS",
+  "title": "Alimenta a Besta ",
+  "sub": "Mesmo dando o nosso melhor por vocês e tentando continuar a fazer música, tudo isto tem um custo. Há várias formas de nos apoiar. Podes tornar-te padrinho/madrinha e apoiar-nos com 5.- por mês ou fazer uma doação única. Como padrinho/madrinha, vais ter vários benefícios, como um melhor acesso à banda, entrada na festa ou concerto no final do mês e muito mais...",
+  "cards": [
+    {
+      "iconStamp": "✚",
+      "kicker": "/ PARA FÃS",
+      "heading": "Torna-te Padrinho",
+      "blurb": "Apoia a tua banda local. Ajuda-nos a tocar o máximo de concertos possível. Precisamos de apoio para cobrir a renda, custos de viagem, equipamento, o fotógrafo, o videógrafo, etc. Configura simplesmente uma ordem permanente mensal para a conta da banda ou apoia-nos regularmente via TWINT. Se puderes dispensar 5 CHF por mês, tocamos ainda mais alto só para ti.",
+      "bullets": [
+        "Festa de Fim de Mês - GRÁTIS",
+        "Bastidores da Banda",
+        "Junta-te a nós num Bandbuddyday"
+      ],
+      "ctaLabel": "Junta-te a partir de 5 CHF/mês →",
+      "ctaHref": "#contact",
+      "ctaStyle": "primary"
+    },
+    {
+      "iconStamp": "★",
+      "kicker": "/ PARA MARCAS",
+      "heading": "Patrocina um Show",
+      "blurb": "Ajuda a tornar a música ao vivo possível!\n\nAtravés do teu patrocínio, vais apoiar eventos inesquecíveis e ajudar a tornar realidade concertos ao vivo de alta qualidade. Seja empresa ou particular, cada contribuição ajuda a garantir que os artistas são pagos de forma justa e cria experiências únicas para o público.",
+      "bullets": [
+        "Presença de marca: Visibilidade no nosso site, redes sociais e em eventos ao vivo.",
+        "Oportunidades de publicidade: O teu logótipo em materiais promocionais, além de promoção local e online.",
+        "Envolvimento local: Apoia a cena musical e cultural regional e faz parte da nossa comunidade.",
+        "Parcerias flexíveis: Pacotes de patrocínio à medida, ajustados aos teus objetivos e orçamento."
+      ],
+      "ctaLabel": "Pede o dossiê →",
+      "ctaHref": "#contact",
+      "ctaStyle": "ghost"
+    }
+  ]
+}

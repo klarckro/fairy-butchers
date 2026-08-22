@@ -121,6 +121,12 @@ export default defineContentConfig({
     events_de: defineCollection({ type: 'data', source: 'de/events.json', schema: eventsSchema }),
     music_de: defineCollection({ type: 'data', source: 'de/music.json', schema: musicSchema }),
     members_de: defineCollection({ type: 'data', source: 'de/members.json', schema: membersSchema }),
-    sponsors_de: defineCollection({ type: 'data', source: 'de/sponsors.json', schema: sponsorsSchema })
+    sponsors_de: defineCollection({ type: 'data', source: 'de/sponsors.json', schema: sponsorsSchema }),
+    // Portuguese
+    site_pt: defineCollection({ type: 'data', source: 'pt/site.json', schema: siteSchema }),
+    events_pt: defineCollection({ type: 'data', source: 'pt/events.json', schema: eventsSchema }),
+    music_pt: defineCollection({ type: 'data', source: 'pt/music.json', schema: musicSchema }),
+    members_pt: defineCollection({ type: 'data', source: 'pt/members.json', schema: membersSchema }),
+    sponsors_pt: defineCollection({ type: 'data', source: 'pt/sponsors.json', schema: sponsorsSchema })
   }
 })

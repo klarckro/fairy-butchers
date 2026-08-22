@@ -18,7 +18,9 @@
     "message": "Nachricht",
     "messagePlaceholder": "Erzähl uns, was los ist.",
     "send": "Abschicken ✚",
-    "sent": "Gesendet ✚"
+    "sent": "Gesendet ✚",
+    "mailBlurb": "Schreib uns direkt eine E-Mail.",
+    "mailCta": "E-Mail schreiben ✚"
   },
   "language": {
     "switchTo": "EN"

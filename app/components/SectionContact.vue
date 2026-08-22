@@ -15,6 +15,9 @@ defineProps<{ data: ContactData }>()
 
 const { t } = useI18n()
 
+// Form has no backend on this static deploy — mailto CTA below is the real contact path.
+const formEnabled = false
+
 const form = reactive({
   name: '',
   email: '',
@@ -25,7 +28,6 @@ const sent = ref(false)
 
 function handleSubmit() {
   sent.value = true
-  // In a real deploy this would POST to a serverless function / email service.
   setTimeout(() => { sent.value = false }, 4000)
 }
 </script>
@@ -36,7 +38,7 @@ function handleSubmit() {
       <SectionHead :eyebrow="data.eyebrow" :title="data.title" :sub="data.sub" />
 
       <div class="contact-grid">
-        <form class="contact-form" @submit.prevent="handleSubmit">
+        <form v-if="formEnabled" class="contact-form" @submit.prevent="handleSubmit">
           <div>
             <label for="contact-name">{{ t('contact.name') }}</label>
             <input id="contact-name" v-model="form.name" required :placeholder="t('contact.namePlaceholder')" />
@@ -62,6 +64,11 @@ function handleSubmit() {
           </div>
         </form>
 
+        <div v-else class="contact-form contact-mailto">
+          <p>{{ t('contact.mailBlurb') }}</p>
+          <a class="btn btn-primary" :href="`mailto:${data.channels[0]?.value}`">{{ t('contact.mailCta') }}</a>
+        </div>
+
         <aside class="contact-info">
           <h4>{{ data.infoTitle }}</h4>
           <p>{{ data.infoBlurb }}</p>
@@ -76,7 +83,7 @@ function handleSubmit() {
       <div class="footer-bottom">
         <div>{{ data.footerNote }}</div>
         <div class="socials">
-          <a v-for="s in data.socials" :key="s.label" :href="s.href" :title="s.title">{{ s.label }}</a>
+          <a v-for="s in data.socials" :key="s.label" :href="s.href" :title="s.title" target="_blank" rel="noopener">{{ s.label }}</a>
         </div>
       </div>
     </div>

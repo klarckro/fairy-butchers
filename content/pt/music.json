@@ -1,0 +1,25 @@
+{
+  "eyebrow": "/ 02 — A NOSSA MÚSICA / VLOGS",
+  "title": "Ouve Alto.",
+  "sub": "Começámos por tocar covers para encontrar o nosso som. Ainda não temos a certeza do rumo, mas à medida que o som se torna mais claro, vamos abençoar-vos com temas originais dos Fairybutchers. Fiquem atentos.\n\nNa nossa Soundgallery encontram os vídeos 'Bandbuddyday'. Mostramos os hobbies dos membros para nos conhecermos melhor. A primeira ronda foca-se em hobbies desportivos, a seguir vêm os hobbies culturais.",
+  "items": [
+    {
+      "title": "N°1 Bandbuddyday - Jiu Jitsu Brasileiro",
+      "kind": "VLOG VIDEO",
+      "length": "04:12",
+      "year": "2026",
+      "featured": false,
+      "badge": "",
+      "thumb": "/assets/cleaver-stage.jpeg",
+      "thumbPosition": "center 20%",
+      "href": "https://youtu.be/c45ENBrX4fA"
+    },
+    {
+      "title": "N°2 Bandbuddyday - Downhill Mountainbike",
+      "kind": "VLOG VIDEO",
+      "length": "03:11",
+      "year": "2026",
+      "href": "https://youtu.be/EbrsJ60xJAg"
+    }
+  ]
+}
